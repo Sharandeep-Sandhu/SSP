@@ -178,5 +178,5 @@ while True:
     elif "log off" in statement or "sign out" in statement:
         speak("Ok , your pc will log off in 10 sec make sure you exit from all applications")
         subprocess.call(["shutdown", "/l"])
-
+#agee ma karo
 time.sleep(3)
