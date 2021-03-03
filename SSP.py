@@ -24,8 +24,8 @@ print('Loading your  SSP asistant')
 
 engine=pyttsx3.init()
 voices=engine.getProperty('voices')
-engine.setProperty('voice',voices[0].id)
-print('voice',voices[0].id)
+engine.setProperty('voice',voices[1].id)
+print('\n voice',voices[1].id)
 
 
 def speak(text):
@@ -71,11 +71,11 @@ while True:
     statement = takeCommand().lower()
     if statement==0:
         continue
-
+    break
     if "good bye" in statement or "ok bye" in statement or "stop" in statement:
         speak('your S.S.P assistant is shutting down,Good bye')
         print('your S.S.P assistant is shutting down,Good bye')
-        break
+    #    break
 
 
 
