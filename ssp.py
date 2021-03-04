@@ -5,9 +5,12 @@ Created on Tue Feb 23 20:41:00 2021
 
 @author: sandhu
 """
+
 #import TKinter
 import speech_recognition as sr
-import pyttsx3
+#import pyttsx3
+import playsound
+from gtts import gTTS
 import datetime
 import wikipedia
 import webbrowser
@@ -16,22 +19,43 @@ import time
 import subprocess
 from ecapture import ecapture as ec
 import wolframalpha
-import json
+#import json
 import requests
-from _ctypes import Union, Structure, Array
+#from _ctypes import Union, Structure, Array
 
-print('Loading your  SSP asistant')
+print("आपकी SSP सहायता अब सक्षम है")
 
-engine=pyttsx3.init()
-voices=engine.getProperty('voices')
-engine.setProperty('voice',voices[1].id)
-engine.setProperty('rate', 120)
-print('\n voice',voices[1].id)
+# engine=pyttsx3.init()
+# voices=engine.getProperty('voices')
+# engine.setProperty('voice',voices[1].id)
+# engine.setProperty('rate', 150)
+# print('\n voice',voices[1].id)
 
 
-def speak(text):
-   engine.say(text)
-   engine.runAndWait()
+# def speak(text):
+#    engine.say(text)
+#    engine.runAndWait()
+
+
+num = 0                         
+def speak(output): 
+	global num 
+
+	# num to rename every audio file 
+	# with different name to remove ambiguity 
+	num += 1
+	print("PerSon : ", output) 
+
+	toSpeak = gTTS(text = output, lang ='hi', slow = True) 
+	# saving the audio file given by google text to speech 
+	file = str(num)+".mp3"
+	toSpeak.save(file) 
+	
+	# playsound package is used to play the same file. 
+	playsound.playsound(file, True) 
+	os.remove(file) 
+
+
 
 def wishMe():
     hour=datetime.datetime.now().hour
@@ -42,7 +66,7 @@ def wishMe():
         speak("\n Hello,Good Afternoon")
         print("\n Hello,Good Afternoon")
     else:
-        speak("\n Hello,Good Evening")
+        speak("\n Hello,Good Evening   होर सुनाओ ")
         print("\n Hello,Good Evening")
 
 def takeCommand():
@@ -52,7 +76,7 @@ def takeCommand():
         audio=r.listen(source)
 
         try:
-            statement=r.recognize_google(audio,language='en-in')
+            statement=r.recognize_google(audio,language='en')
             print(f"user said:{statement}\n")
 
         except Exception as e:
@@ -60,19 +84,18 @@ def takeCommand():
             return "None"
         return statement
 
-speak("Loading your  SSP asistant")
+speak("आपकी SSP सहायता अब सक्षम है")
 wishMe()
 
 
-#if _name=='main_':
-
-
-while True:
-    speak("Tell me how can I help you now?")
-    statement = takeCommand().lower()
-    if statement==0:
-        continue
-    break
+if __name__ == "__main__":
+    while True:
+        speak("Tell me how can I help you now?")
+        
+        statement = takeCommand().lower()
+        if statement==0:
+            continue
+        break
     if "good bye" in statement or "ok bye" in statement or "stop" in statement:
         speak('your S.S.P assistant is shutting down,Good bye')
         print('your S.S.P assistant is shutting down,Good bye')
@@ -182,5 +205,4 @@ while True:
         subprocess.call(["shutdown", "/l"])
 #agee ma karo
 time.sleep(3)
-
 # pip install 
