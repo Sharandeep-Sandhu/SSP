@@ -182,3 +182,5 @@ while True:
         subprocess.call(["shutdown", "/l"])
 #agee ma karo
 time.sleep(3)
+
+# pip install 
