@@ -1,11 +1,7 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
 """
 Created on Tue Feb 23 20:41:00 2021
-
 @author: sandhu
 """
-
 #import TKinter
 import speech_recognition as sr
 #import pyttsx3
@@ -96,7 +92,8 @@ if __name__ == "__main__":
         if statement==0:
             continue
         break
-    if "good bye" in statement or "ok bye" in statement or "stop" in statement:
+    if "good bye" in statement or "ok bye" in statement or "stop" in statement or "ok then you cant help me" in statement or "that was shit, you cant helping" in statement or "quit" in statement or "you can't help me " in statement or "neither of these" in statement or "stop, i don't want to continue" in statement or "you can't help me with what i need" in statement or "i guess you can't help me" in statement or "leave it" in statement or "leave it please" in statement or "leave that" in statement or "leave this" in statement or "i don't want to" in statement or "that's not what i want" in statement or "ok, but that doesnt help me" in statement or "stop go back" in statement or "do you get anything?" in statement or "nothing else?" in statement or "stop," in statement or "stop there" in statement or "okey, stop" in statement or "terminate it" in statement or "stop it" in statement or "exit" in statement or "exit please" in statement or "quit please" in statement or "exit from this" in statement or "quit" in statement or "i want to quit" in statement :
+        
         speak('your S.S.P assistant is shutting down,Good bye')
         print('your S.S.P assistant is shutting down,Good bye')
     #    break
