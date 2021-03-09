@@ -18,6 +18,9 @@ import wolframalpha
 #import json
 import requests
 #from _ctypes import Union, Structure, Array
+from kivy.app import App
+from kivy.uix.button import Button
+
 
 print("आपकी SSP सहायता अब सक्षम है")
 
