@@ -7,7 +7,7 @@ alabaster==0.7.12
 anaconda==0.0.1.1
 appdirs==1.4.4
 APScheduler==3.7.0
-apturl==0.5.2
+#apturl==0.5.2
 asn1crypto==0.24.0
 astroid==2.5
 astunparse==1.6.3
