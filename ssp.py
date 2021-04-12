@@ -3,14 +3,6 @@ Created on Tue Feb 23 20:41:00 2021
 @author: sandhu
 """
 #import TKinter
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 16 21:42:19 2021
-
-@author: sandhu
-"""
-
 import speech_recognition as sr
 #import pyttsx3
 import playsound
@@ -21,14 +13,13 @@ import webbrowser
 import os
 import time
 import subprocess
-import ecapture as ec
+from ecapture import ecapture as ec
 import wolframalpha
 #import json
 import requests
 #from _ctypes import Union, Structure, Array
 #from kivy.app import App
 #from kivy.uix.button import Button
-
 
 print("आपकी SSP सहायता अब सक्षम है")
 
@@ -51,7 +42,7 @@ def speak(output):
 	# num to rename every audio file 
 	# with different name to remove ambiguity 
 	num += 1
-	print("SSP : ", output) 
+	print("Sevadar : ", output) 
 
 	toSpeak = gTTS(text = output, lang ='hi', slow = True) 
 	# saving the audio file given by google text to speech 
@@ -213,4 +204,3 @@ if __name__ == "__main__":
         subprocess.call(["shutdown", "/l"])
 #agee ma karo
 time.sleep(3)
-# pip install 
