@@ -100,7 +100,17 @@ if __name__ == "__main__":
         print('your S.S.P assistant is shutting down,Good bye')
     #    break
 
-
+    if "thanks" in statement or "thanks you" in statement or "thanks a lot" in statement or "you are awesome" in statement or "that helps a lot" in statement or "thnk you" in statement or "thanks for the helps" in statement or "thanks you for your support" in statement or "i will contect you, if i required your help" in statement or "okay, thanks" in statement or "alright, thanks" in statement or "-thanks" in statement or "thank you so much" in statement or "thanks bot" in statement or "thanks for that" in statement or "cheers" in statement or "cheers bro" in statement or "ok thanks!" in statement or "perfect thank you" in statement or "amazing, thanks" in statement or "cool. thanks" in statement or "cool thank you" in statement or "great thanks" in statement :
+        speak("it's my pleasure sir, i am always here for help you")
+        print("it's my pleasure sir, i am always here for help you")
+        
+        
+    if "how were you built?" in statement or "how were you made?" in statement or "tell me how ware made?" in statement or "let me know how were made you exactly" in statement or "I'd like to know how were created" in statement or "can you give me an idea as to how you were created?" in statement or "i want to know how you were formed" in statement or "what was the process for making you?" in statement or "can you explain how you were created?" in statement or "Specify how you were created?" in statement or "can you say how you were constructed?" in statement or "how exactly were you made?" in statement or "how were you formed" in statement or "how did they made you?" in statement or "how did they create you? " in statement or "do you know how you were made? " in statement or "do you know how you were built? " in statement or "how were you set up? " in statement :
+        speak("I was created by Er.Sharandeep Singh after a lot of problems. he had face a lot of challenges but he has a confidence that he can do it, and he did it.")
+        print("I was created by Er.Sharandeep Singh after a lot of problems. he had face a lot of challenges but he has a confidence that he can do it, and he did it.")            
+        
+    if "Whats your age?" in statement or "how old?" in statement or "what's your age?" in statement or "how many year old you are?" in statement or "when were you born?" in statement or "how many year old are you?" in statement or "do you know how old you are?" in statement or "what is your exact age?" in statement or "what year were you born? " in statement or "can you tell me your age?" in statement or "what is your age?" in statement or "tell me your age?" in statement or "how about your age" in statement :
+        speak("i was created in 2021 in march")    
 
     if 'wikipedia' in statement:
         speak('Searching Wikipedia...')
