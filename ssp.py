@@ -109,8 +109,54 @@ if __name__ == "__main__":
         speak("I was created by Er.Sharandeep Singh after a lot of problems. he had face a lot of challenges but he has a confidence that he can do it, and he did it.")
         print("I was created by Er.Sharandeep Singh after a lot of problems. he had face a lot of challenges but he has a confidence that he can do it, and he did it.")            
         
-    if "Whats your age?" in statement or "how old?" in statement or "what's your age?" in statement or "how many year old you are?" in statement or "when were you born?" in statement or "how many year old are you?" in statement or "do you know how old you are?" in statement or "what is your exact age?" in statement or "what year were you born? " in statement or "can you tell me your age?" in statement or "what is your age?" in statement or "tell me your age?" in statement or "how about your age" in statement :
-        speak("i was created in 2021 in march")    
+    if "Whats your age?" in statement or "how old?" in statement or "what's your age?" in statement or "how many year old you are?" in statement or "when were you born?" in statement or "how many year old are you?" in statement or "do you know how old you are?" in statement or "what is your exact age?" in statement or "what year were you born? " in statement or "can you tell me your age?" in statement or "what is your age?" in statement or "tell me your age?" in statement :
+        speak("I was created in March month in 2021")
+        print("I was created in March month in 2021")
+        
+    if "are you bot" in statement or "are you a real bot" in statement or "are you really a bot" in statement or "are you a robot" in statement or "what are you, a bot" in statement or "tell me, are you bot" in statement or "are you a skynet" in statement or "are you a chat bot" in statement or "are you ai" in statement or "are you artificial intelligence" in statement or "are you artificial" in statement or "you are a robot" in statement or "you are ai" in statement or "you are chatbot" in statement or "are you bot" in statement or "are you bot" in statement :
+        speak("you can call me anything, but Sharandeep Singh is made me as a friend")
+        print("you can call me anything, but Sharandeep Singh is made me as a friend")
+        
+        # intent:ask_builder
+    if "can you shear your boss with me" in statement or "i want to know the company which designed you" in statement or "i want to know the company which generated you" in statement or "i want to know the company which invented you" in statement or "i want to know who invented you" in statement or "please tell me the company who created you" in statement or "please tell me who created you" in statement or "who's your boss" in statement or "who's your builder" in statement or "who built you" in statement or "who created you" in statement or "who is your created" in statement or "who designe you" in statement or "who is behind all this" in statement or "who your boss, tell me" in statement or "who is your boss" in statement or "who made you" in statement or "and who built u" in statement or "who built you" in statement or "who made you" in statement :
+        speak("he is not only my bose, he is a god for me")
+        print("He is not only my boss, He is a god for me")\
+            
+            
+    if "what you think about god" in statement or "is god real" in statement or "what about god" in statement or "the god is real" in statement or "god is real" in statement :
+        speak("Yes, the person how created you, you are called him your god")
+        print("Yes, the person how created you, you are called him your god")
+  
+    if "are you see god" in statement or "who is your god" in statement :
+        speak("For me, Er.Sharandeep Singh is my god. because he created me, so he is my god")
+        print("For me, Er.Sharandeep Singh is my god. because he created me, so he is my god")
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     if 'wikipedia' in statement:
         speak('Searching Wikipedia...')
