@@ -39,15 +39,15 @@ class Widget():
     #------------------------------------------------------KEY WORD LISTS---------------------------------------------------------------------------
     #                THESE ARE ALL THE LIST WHICH CONTAINS IMPORTANT KEYWORDS WHICH THE SSP CAN USE.
     #--------------------------------------------------------------------------------------------------------------------------------------------------------
-    greet = ['Hey Whats up! How are you doing', 'Hello Aditya','Hi ! I am your Assistant','Hello, How can I help You']
+    greet = ['Hey Whats up! How are you doing', 'Hello Sharandeep Singh','Hi ! I am your Assistant','Hello, How can I help You']
     how = ['I am Fine Sir, What about You','I am fine as always', 'what you think','just fine!!']
     name = ['You Can call me SSP','My Name Is SSP','you named me SSP','You Should Know this, My name Is SSP']
-    creator = ['You made Me','I was Made by Aditya','One And only, Aditya','Best in the World, Aditya']
+    creator = ['You made Me','I was Made by Sharandeep Singh','One And only, Sharandeep Singh','Best in the World, Sharandeep Singh']
     can = ['I Can Do Everything .','Just Give Me A Try And Figure This Out.','What you Coded Within Me ;) ','Your Choice']
     c_un = ["I did'nt get that",'What You Said?','I was Unable To Understand','I have some Bugs Because of you']
     here = ['To Help You Out','To Help You To Do Tasks','To Be Your Assistant','You Called me, Thatwise']
     frd = ['I will Feel Lucky To Be Your Friend','Yaa Ofcource']
-    me = ['You Told Me Your Name, Aditya','I Think That\'s Aditya','Your Name That I Know Is Aditya']
+    me = ['You Told Me Your Name, Sharandeep Singh','I Think That\'s Sharandeep Singh','Your Name That I Know Is Sharandeep Singh']
     thanks = ['My Pleasure','Welcome','Ohh Don\'t amberis me by saying thanks ','So Sweet!!']
     #----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -67,7 +67,7 @@ class Widget():
 
         Label(more, text='By: Aditys',bg='powder blue',font=('Arial Black',10,'bold')).pack()
         
-        out = 'My Name Is SSP. I Was Created By Aditya. \n He Made Me Using Python Language. I Was Made\n As A Project For Him. But Later I Turned Really Well.\n So He Started Working Really Hard On Me. His\n Progress In Me Was Just Great. So, Now I Am His One\n Of The Dream Project Which He Is Planning\n To Build For Cross-Platform.'
+        out = 'My Name Is SSP. I Was Created By Sharandeep Singh. \n He Made Me Using Python Language. I Was Made\n As A Project For Him. But Later I Turned Really Well.\n So He Started Working Really Hard On Me. His\n Progress In Me Was Just Great. So, Now I Am His One\n Of The Dream Project Which He Is Planning\n To Build For Cross-Platform.'
         
         Label(more, text=out,bg='powder blue',font=('Arial Black',10,'bold')).pack()
         
@@ -208,7 +208,7 @@ class Widget():
 
         #-----------------GURPARTAP CONDITION-------------------------------------------------------------------
         elif 'SSP singh'  in user_input:
-            out = 'SSP Singh Is A Good Friend Of Aditya. He is well Known as SSP'                                                                                               #|   
+            out = 'SSP Singh Is A Good Friend Of Sharandeep Singh. He is well Known as SSP'                                                                                               #|   
             self.printing_func(out)                                                                                    #|
             self.speak(out)
         #-----------------------------------------------------------------------------------------------------------------------
@@ -261,7 +261,7 @@ class Widget():
                 outa = ' Weather Forcast Is Currently Unavailable'
                 
                 
-            out = f'Good Morning Aditya, The Current Time is {time},  And {outa},    Have A Good Day Sir.'
+            out = f'Good Morning Sharandeep Singh, The Current Time is {time},  And {outa},    Have A Good Day Sir.'
             self.printing_func(out)
             self.speak(out)
         #--------------------------------------------------------------------------------------------------------------------------------------------------------            
