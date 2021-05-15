@@ -16,7 +16,6 @@ import wikipedia
 import webbrowser
 import os
 import requests
-
 #-----------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -38,11 +37,11 @@ class Widget():
 
 
     #------------------------------------------------------KEY WORD LISTS---------------------------------------------------------------------------
-    #                THESE ARE ALL THE LIST WHICH CONTAINS IMPORTANT KEYWORDS WHICH THE ssp CAN USE.
+    #                THESE ARE ALL THE LIST WHICH CONTAINS IMPORTANT KEYWORDS WHICH THE SSP CAN USE.
     #--------------------------------------------------------------------------------------------------------------------------------------------------------
     greet = ['Hey Whats up! How are you doing', 'Hello Aditya','Hi ! I am your Assistant','Hello, How can I help You']
     how = ['I am Fine Sir, What about You','I am fine as always', 'what you think','just fine!!']
-    name = ['You Can call me ssp','My Name Is ssp','you named me ssp','You Should Know this, My name Is ssp']
+    name = ['You Can call me SSP','My Name Is SSP','you named me SSP','You Should Know this, My name Is SSP']
     creator = ['You made Me','I was Made by Aditya','One And only, Aditya','Best in the World, Aditya']
     can = ['I Can Do Everything .','Just Give Me A Try And Figure This Out.','What you Coded Within Me ;) ','Your Choice']
     c_un = ["I did'nt get that",'What You Said?','I was Unable To Understand','I have some Bugs Because of you']
@@ -64,11 +63,11 @@ class Widget():
         
 
         
-        Label(more, text='ssp - The Virtual Assistant',bg='powder blue',font=('Arial Black',10,'bold')).pack()
+        Label(more, text='SSP - The Virtual Assistant',bg='powder blue',font=('Arial Black',10,'bold')).pack()
 
         Label(more, text='By: Aditys',bg='powder blue',font=('Arial Black',10,'bold')).pack()
         
-        out = 'My Name Is ssp. I Was Created By Aditya. \n He Made Me Using Python Language. I Was Made\n As A Project For Him. But Later I Turned Really Well.\n So He Started Working Really Hard On Me. His\n Progress In Me Was Just Great. So, Now I Am His One\n Of The Dream Project Which He Is Planning\n To Build For Cross-Platform.'
+        out = 'My Name Is SSP. I Was Created By Aditya. \n He Made Me Using Python Language. I Was Made\n As A Project For Him. But Later I Turned Really Well.\n So He Started Working Really Hard On Me. His\n Progress In Me Was Just Great. So, Now I Am His One\n Of The Dream Project Which He Is Planning\n To Build For Cross-Platform.'
         
         Label(more, text=out,bg='powder blue',font=('Arial Black',10,'bold')).pack()
         
@@ -89,7 +88,7 @@ class Widget():
     #-----------------------------------------------------------------------------------------------------------------------------
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[1].id)
+    engine.setProperty('voice', voices[0].id)
     #------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -97,7 +96,7 @@ class Widget():
 
 
     #---------------------------PRINTING FUNC---------------------------------------------------
-    #       THIS FUCTION PRINTS THE ssp'S RESPONCE TO SCREEN.
+    #       THIS FUCTION PRINTS THE SSP'S RESPONCE TO SCREEN.
     #---------------------------------------------------------------------------------------------------
     def printing_func(self, out):
         self.text_box2.delete(1.0,END)
@@ -109,7 +108,7 @@ class Widget():
 
 
     #-----------------SPEAK FUNCTION-------------------------------
-    #    THIS FUNCTION SPEAKS THE ssp'S RESPONCE
+    #    THIS FUNCTION SPEAKS THE SSP'S RESPONCE
     #------------------------------------------------------------------------
     def speak(self,s):
         self.engine.say(s)
@@ -122,7 +121,7 @@ class Widget():
 
 
     #-----------------------SEND FUNC-----------------------------------------------------------------
-    #        THIS FUCTION IS BEING USED TO SEND USER_INPUT TO ssp.
+    #        THIS FUCTION IS BEING USED TO SEND USER_INPUT TO SSP.
     #--------------------------------------------------------------------------------------------------------
     def send_func(self):
         user_input = self.search_var.get().lower()
@@ -136,7 +135,7 @@ class Widget():
 
 
         #------------------------------------CONDITIONS------------------------------------------------------------------------------------------
-        # THESE ARE CONDITIONS WHICH THE ssp CHECKS. HE RESPOND TO THE MOST RELEVENT CONDITION.
+        # THESE ARE CONDITIONS WHICH THE SSP CHECKS. HE RESPOND TO THE MOST RELEVENT CONDITION.
         #-------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -208,8 +207,8 @@ class Widget():
 
 
         #-----------------GURPARTAP CONDITION-------------------------------------------------------------------
-        elif 'ssp'  in user_input:
-            out = 'ssp Is A Good Friend Of Aditya. He is well Known as ssp'                                                                                               #|   
+        elif 'SSP singh'  in user_input:
+            out = 'SSP Singh Is A Good Friend Of Aditya. He is well Known as SSP'                                                                                               #|   
             self.printing_func(out)                                                                                    #|
             self.speak(out)
         #-----------------------------------------------------------------------------------------------------------------------
@@ -697,10 +696,10 @@ class Widget():
         self.win.resizable(0,0)
         self.win.configure(bg='orange')
         
-        Label(self.win, text='ASSISTANT',font=('arial black',18),fg='white',width=30,bg='green',bd=5).pack()
+        Label(self.win, text='SSP ASSISTANT',font=('arial black',18),fg='white',width=30,bg='green',bd=5).pack()
 
         Label(self.win, text='Me' , font=('arial black',20),fg='white',bg='orange').place(x=60,y=50)
-        Label(self.win, text='ssp' , font=('arial black',20),fg='white',bg='orange').place(x=260,y=50)
+        Label(self.win, text='SSP' , font=('arial black',20),fg='white',bg='orange').place(x=260,y=50)
 
         self.text_box1 = Text(self.win, font=('arial black',13),width=16,height=5,fg='blue', wrap=WORD )
         self.text_box1.place(x=10,y=100)
